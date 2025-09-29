@@ -17,7 +17,7 @@ app = FastAPI(title="ID Photo Background Processor", version="1.0.0")
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://143.198.214.226:3000", "https://autoIdgen.com", "*"],
+    allow_origins=["http://143.198.214.226:3000", "https://autoIdgen.com","http://localhost:3001","http://localhost:3000" "*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
